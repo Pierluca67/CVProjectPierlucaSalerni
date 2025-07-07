@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8"> <!-- Imposta la codifica dei caratteri su UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Rende la pagina responsive -->
+  <title>Curriculum Vitae - Pierluca Salerni</title> <!-- Titolo della pagina che appare nella scheda del browser -->
+
+  <style>
+    /* Reset base per margini e padding */
+    * {
+      box-sizing: border-box; /* Includi padding e bordo nel calcolo delle dimensioni */
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Stile base del corpo della pagina */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font moderno */
+      background-color: #f9f9f9; /* Sfondo chiaro */
+      color: #333; /* Testo grigio scuro */
+      line-height: 1.6; /* Spaziatura tra linee */
+    }
+
+    /* Intestazione del CV */
+    header {
+      background-color: #0066cc; /* Blu brillante */
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    
+    header h1 {
+      margin-bottom: 10px;
+    }
+
+    /* Contenuto principale */
+    main {
+      max-width: 1000px; /* Larghezza massima del contenuto */
+      margin: 20px auto; /* Centra il contenuto */
+      padding: 20px;
+      background-color: white; /* Sfondo bianco */
+      box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Ombra leggera per il contenitore */
+    }
+
+    /* Ogni sezione del CV */
+    section {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #0066cc; /* Riga sotto il titolo */
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+      color: #0066cc;
+    }
+
+    /* Elenchi puntati */
+    ul {
+      list-style-type: disc; /* Puntini classici */
+      margin-left: 20px; /* Spaziatura dal bordo sinistro */
+    }
+
+    /* Sezioni contatti e lingue */
+    .contact p, .languages p {
+      margin: 5px 0;
+    }
+
+    /* Griglia per affiancare contatti e lingue */
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* Due colonne uguali */
+      gap: 20px; /* Spazio tra colonne */
+    }
+
+    /* Impostazioni responsive per dispositivi piccoli */
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: 1fr; /* Una colonna sola */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Intestazione con nome e titolo -->
+  <header>
+    <h1>Pierluca Salerni</h1>
+    <p>Analista Programmatore</p>
+  </header>
+
+  <!-- Corpo principale del curriculum -->
+  <main>
+
+    <!-- Presentazione personale -->
+    <section class="intro">
+      <h2>Presentazione</h2>
+      <p>Analista Programmatore, passione e curiosità per la tecnologia e l'innovazione, da sempre mi stimolano ad aggiornarmi costantemente
+        sulle novità. In tal senso seguo l'evoluzione, oltre che del mio ambito di programmazione, anche di altri ambiti come l'IOT,
+        la modellazione 3D, la stampa 3D, la robotica, l'automazione industriale e l'automazione in generale</p>
+    </section>
+
+    <!-- Competenze tecniche -->
+    <section class="skills">
+      <h2>Competenze Tecniche</h2>
+      <ul>
+        <li><strong>Elaboratori: </strong>Personal computer, Mainframe Bull (Dps 7000, Dps 7, Dps 6, Dpx)</li>
+        <li><strong>Sistemi operativi: </strong>Unix, Linux, Ms-dos, Windows, Bull (Gcos7, Gcos6)</li>
+        <li><strong>Linguaggi di programmazione: </strong>
+            <ul><li>Cobol: Tds-Cobol, Tds-Cobol/Oracle, Vs Cobol workbench, OpenCobol</li></ul>
+            <ul><li>Oracle: Sql Plus, Sql Forms, Sql Report</li></ul>
+            <ul><li>Python con librerie: Tkinter, Sqlite3, Pandas, Numpy, Scipy, Matplotlib, Seaborn, Scikit-learn</li></ul>
+            <ul><li>Altri: JCL, Java, Android, Processing, Arduino, Access, Word (programmazione macro), Excel (programmazione macro),
+                    Assembly, Basic</li></ul>
+        </li>
+        <li><strong>Formati file: </strong>Xml, JSON</li>
+        <li><strong>Ide: </strong>Netbeans, Eclipse, Idle, Jupyter (programmazione Python interattiva), Visual Studio Code</li>
+        <li><strong>Database: </strong>MySql, Sqlite3, MongoDb</li>
+        <li><strong>Ambito web: </strong>Html, Css, Bootstrap, Javascript, Typescript, Angular</li>
+        <li><strong>Altro: </strong>
+            <ul><li>Oracle VM Virtualbox: software per la virtualizzazione (virtual machine)</li></ul>
+            <ul><li>Release Automation: software per il deployment delle applicazioni</li></ul>
+            <ul><li>Xampp: server web locale</li></ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Formazione accademica -->
+    <section class="education">
+      <h2>Formazione</h2>
+      <ul>
+        <li><strong>Diploma di Perito Industriale in Informatica</strong> - Istituto Tecnico Industriale Enrico Fermi - Roma (1986)</li>
+        <li><strong>Corso linguaggi di programmazione Java e Android</strong> - Pc Academy - Roma (5/2014 - 7/2014)</li>
+        <li><strong>Workshop Arduino (piattaforma prototipazione elettronica)</strong> - FabLab Roma Regione Lazio (8/10/2019)</li>
+        <li><strong>Workshop Fusion 360 (software Cad 3D)</strong> - FabLab Roma Regione Lazio (22/10/2019)</li>
+        <li><strong>Workshop Arduino avanzato (controllo tramite Processing)</strong> - FabLab Roma Regione Lazio (19/11/2019)</li>
+        <li><strong>Workshop Stampa 3D (software Cura + stampa 3D oggetto)</strong> - FabLab Roma Regione Lazio (10/12/2019)</li>
+        <li><strong>Corso linguaggio di programmazione Python (RabbitMQ e MongoDB)</strong> - Udemy piattaforma online (3/2020 - 6/2020)</li>
+        <li><strong>Corso HTML e CSS</strong> - (3/2/2025 - 14/2/2025)</li>
+        <li><strong>Corso Front End Developer</strong> - Accademia Informatica - Roma (14/03/2025 - 20/06/2025 200 ore)</li>
+      </ul>
+    </section>
+
+    <!-- Esperienze lavorative -->
+    <section class="experience">
+      <h2>Esperienze Lavorative</h2>
+      <ul>
+        <li>
+          <strong>Programmatore</strong> - INDEX srl (4 mesi)<br>
+          Programmazione in linguaggio Cobol
+        </li>
+        <li>
+          <strong>Programmatore e istruttore (Servizio Militare)</strong> - Ced del Distaccamento Marina Militare di Roma  (10/1987 - 1/1989)<br>
+          Programmazione in linguaggio Cobol          
+        </li>
+        <li>
+          <strong>Analista / Programmatore</strong> - Istituto della Enciclopedia Italiana "Treccani"  (2/1989 - 7/2001)<br>
+          Consulente informatico, riguardo la risoluzione di problematiche informatiche nei settori: <strong>Direzione Sistemi Informativi,
+          Contabilità generale, Contabilità di magazzino, Magazzino, Gestione clienti, Editoriale, Marketing, Patrimonio e logistica</strong><br><br>
+        </li>
+        <li>
+          <strong>Utilizzo software Release Automation</strong> - QUANTIS SRL  (2 mesi)<br>
+        </li>
+        <li>
+          <strong>Tirocinio curriculare Front End Developer</strong> - Fmg Consulting SRL - Roma (23/06/2025 - 18/07/2025 120 ore)<br>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Lingue e contatti affiancati in griglia -->
+    <section class="languages grid">
+      <div>
+        <h2>Lingue Conosciute</h2>
+        <p><strong>Italiano:</strong> Madrelingua</p>
+        <p><strong>Inglese:</strong> Working Knowledge</p>
+      </div>
+
+      <div class="contact">
+        <h2>Contatti</h2>
+        <p><strong>Email:</strong> pierluca.salerni@libero.it</p>
+        <p><strong>Telefono:</strong> +39 338 4027055</p>
+        <p><strong>Città:</strong> Roma</p>
+        <p><strong>Cap:</strong> 00131</p>
+
+      </div>
+    </section>
+
+    <section>
+      <br><br>
+      <p>Autorizzo il trattamento dei dati personali ai sensi del D. Igs. 196/03.</p>
+    </section>
+
+  </main>
+
+</body>
+</html>
